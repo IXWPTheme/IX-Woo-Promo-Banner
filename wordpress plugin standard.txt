@@ -1,0 +1,29 @@
+/ix-woo-pro-banner/
+│── ix-woo-pro-banner.php                 	# Main plugin file
+│── uninstall.php                         	# Cleanup script
+│── /includes/
+│   │── class-main.php
+│   │── class-autoloader.php			# Load core files
+│   │── class-activator.php			# Plugin activation
+│   │── class-admin-settings.php          	# Admin interface
+│   │── class-pdf-generator.php           	# PDF generation
+│   │── class-deactivator.php			# Plugin deactivation
+│   │── class-product-banner.php          	# Main functionality
+|   |── class-wpb-product-grid-short-code.php 	# Product grid short code for user
+|   |── class-wpb-product-post-type.php		# Promotional banners custom meta field for product post type
+|   |── class-wpb-shop-pro-grid-short-code.php 	# Product grid short code Admin 
+|   |── debug.php				# cache code error in the plugin 
+│── /assets/
+│   │── /css/
+│   │   │── admin.css
+│   │   │── frontend.css
+│   │   │── wpb-product-grid.css		# Product grid short code for user
+│   │   │── wpb-shop-pro-grid.css		# Product grid short code Admin
+│   │── /js/
+│   │   │── admin.js
+│   │   │── frontend.js
+│── /templates/
+│   │── banner-template.php
+│   │── pdf-template.php
+│── /languages/
+│   │── ix-woo-pro-banner.pot             # Translation file

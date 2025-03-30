@@ -1,0 +1,5 @@
+// Basic
+[wpb-product-grid]
+
+// With parameters
+[wpb-product-grid columns="3" image_source="promo" limit="6"]
