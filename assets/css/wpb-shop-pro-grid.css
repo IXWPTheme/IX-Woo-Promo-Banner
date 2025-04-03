@@ -1,0 +1,204 @@
+/* ==============================================
+   IX Woo Pro Banner - Shop Pro Grid Styles
+   Version: 1.0.0
+   Path: assets/css/wpb-shop-pro-grid.css
+============================================== */
+
+/* Base Table Structure */
+.wpb-shop-pro-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Table Rows & Cells */
+.wpb-shop-pro-row {
+    border-bottom: 1px solid #eee;
+}
+
+.wpb-shop-pro-cell {
+    padding: 20px;
+    vertical-align: top;
+    text-align: center;
+    border-right: 1px solid #eee;
+}
+
+.wpb-shop-pro-cell:last-child {
+    border-right: none;
+}
+
+/* Product Item Container */
+.wpb-shop-pro-item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+/* Product Image Styles */
+.wpb-shop-pro-image {
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 4px;
+    aspect-ratio: 1/1; /* Square ratio */
+}
+
+.wpb-shop-pro-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.wpb-shop-pro-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Promotional Elements */
+.wpb-onsale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff3b30;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/* Text Elements */
+.wpb-shop-pro-title {
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.wpb-shop-pro-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.wpb-shop-pro-title a:hover {
+    color: var(--ix-primary-color, #1e85be);
+}
+
+.wpb-shop-pro-price {
+    font-weight: bold;
+    color: #222;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.wpb-shop-pro-price del {
+    color: #999;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+/* Rating Stars */
+.wpb-shop-pro-rating {
+    margin: 8px 0;
+    color: #ffb100;
+    font-size: 14px;
+}
+
+/* Add to Cart Button */
+.wpb-shop-pro-add-to-cart .button {
+    background-color: var(--ix-primary-color, #1e85be);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all 0.3s;
+    margin-top: auto; /* Pushes button to bottom */
+}
+
+.wpb-shop-pro-add-to-cart .button:hover {
+    background-color: var(--ix-primary-hover, #156a9e);
+    transform: translateY(-1px);
+}
+.wpb-shop-pro-quantity{
+    margin: 10px 0;
+}
+.wpb-shop-pro-quantity .qty {
+    width: 60px;
+    text-align: center;
+}
+/* Empty Cell State */
+.wpb-empty-cell {
+    background-color: #f9f9f9;
+}
+
+/* Pagination Styles */
+.wpb-pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.wpb-pagination .page-numbers {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+
+.wpb-pagination .page-numbers.current {
+    background-color: var(--ix-primary-color, #1e85be);
+    color: white;
+    border-color: transparent;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .wpb-shop-pro-grid {
+        display: block;
+    }
+    
+    .wpb-shop-pro-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .wpb-shop-pro-cell {
+        width: 50% !important; /* Override data-columns */
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 15px;
+    }
+    
+    .wpb-shop-pro-cell:nth-child(2n) {
+        border-left: 1px solid #eee;
+    }
+}
+
+@media (max-width: 480px) {
+    .wpb-shop-pro-cell {
+        width: 100% !important;
+        border-left: none !important;
+    }
+    
+    .wpb-shop-pro-add-to-cart .button {
+        width: 100%;
+    }
+}
+
+/* Promo Image Highlighting */
+.wpb-promo-image {
+    border: 2px solid var(--ix-promo-color, #ff3b30);
+    box-sizing: border-box;
+}
+
+/* Color Variables for Theme Integration */
+:root {
+    --ix-primary-color: #1e85be;
+    --ix-primary-hover: #156a9e;
+    --ix-promo-color: #ff3b30;
+}

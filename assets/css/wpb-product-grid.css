@@ -1,0 +1,242 @@
+/**
+ * IX Woo Pro Banner - Product Grid Table Styles
+ * @package IX_Woo_Pro_Banner
+ * @version 1.0.0
+ */
+
+/* Main Table Container */
+.wpb-product-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    table-layout: fixed;
+}
+
+/* Table Rows */
+.wpb-product-row {
+    vertical-align: top;
+}
+
+/* Table Cells */
+.wpb-product-cell {
+    padding: 15px;
+    border: 1px solid #eaeaea;
+    width: calc(100% / var(--columns, 4));
+    box-sizing: border-box;
+}
+
+.wpb-empty-cell {
+    border: none;
+}
+
+/* Product Item Container */
+.wpb-product-item {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product Image Container */
+.wpb-product-image {
+    position: relative;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.wpb-product-image a {
+    display: block;
+}
+
+.wpb-product-image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.wpb-product-cell:hover .wpb-product-image img {
+    transform: scale(1.05);
+}
+
+/* Promo Image Styling */
+.wpb-promo-image {
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 0 1px rgba(255,204,0,0.3);
+}
+
+/* Sale Badge */
+.wpb-onsale {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #77a464;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+/* Product Title */
+.wpb-product-title {
+    font-size: 16px;
+    margin: 0 0 10px;
+    line-height: 1.3;
+    flex-grow: 1;
+}
+
+.wpb-product-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.wpb-product-title a:hover {
+    color: #0073aa;
+}
+
+/* Price */
+.wpb-product-price {
+    font-weight: 700;
+    color: #77a464;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.wpb-product-price del {
+    color: #999;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.wpb-product-price ins {
+    text-decoration: none;
+}
+
+/* Rating */
+.wpb-product-rating {
+    margin: 10px 0;
+    color: #ffb100;
+    font-size: 14px;
+}
+
+/* Add to Cart Button */
+.wpb-product-add-to-cart {
+    margin-top: 15px;
+}
+
+.wpb-product-add-to-cart .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wpb-product-add-to-cart .button:hover {
+    background-color: #0073aa;
+    color: #fff;
+}
+
+/* Pagination */
+.wpb-pagination {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wpb-pagination .page-numbers {
+    display: inline-flex;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wpb-pagination .page-numbers li {
+    margin: 0;
+}
+
+.wpb-pagination .page-numbers a,
+.wpb-pagination .page-numbers span {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wpb-pagination .page-numbers a:hover {
+    background: #f5f5f5;
+}
+
+.wpb-pagination .page-numbers .current {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+/* Error Message */
+.wpb-error {
+    color: #dc3232;
+    padding: 15px;
+    background: #f5f5f5;
+    border-left: 4px solid #dc3232;
+}
+
+/* Empty State */
+.wpb-no-products {
+    text-align: center;
+    padding: 30px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* Responsive Table */
+@media (max-width: 1024px) {
+    .wpb-product-grid,
+    .wpb-product-grid tbody,
+    .wpb-product-row,
+    .wpb-product-cell {
+        display: block;
+        width: 100%;
+    }
+    
+    .wpb-product-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .wpb-product-cell {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    
+    .wpb-empty-cell {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wpb-product-cell {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wpb-product-cell {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,68 @@
+.wpb-control-panel {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.wpb-control-section {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.wpb-control-section:last-child {
+    border-bottom: none;
+}
+
+.wpb-control-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.wpb-control-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wpb-control-group label {
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+.wpb-control {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.wpb-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.wpb-button:hover {
+    background: #45a049;
+}
+
+.wpb-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.wpb-grid-container {
+    margin-top: 20px;
+    transition: opacity 0.3s;
+}
+
+.wpb-grid-container.loading {
+    opacity: 0.6;
+}

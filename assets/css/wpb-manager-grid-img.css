@@ -1,0 +1,108 @@
+/* Base styles for both views */
+.wpb-product-grid-table,
+.wpb-product-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.wpb-product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.wpb-product-title {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.wpb-product-price {
+    font-size: 15px;
+    color: #3a3a3a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wpb-product-price del {
+    color: #999;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.wpb-product-price ins {
+    text-decoration: none;
+    color: #77a464;
+}
+
+.wpb-product-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #96588a;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.wpb-product-button:hover {
+    background-color: #7e4a74;
+}
+
+/* Grid view specific */
+.wpb-product-grid-cell {
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+}
+
+/* List view specific */
+.wpb-product-list-table .wpb-product-row {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wpb-product-list-table .wpb-product-row:last-child {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .wpb-product-grid-table,
+    .wpb-product-grid-cell {
+        display: block;
+        width: 100% !important;
+    }
+    
+    .wpb-product-grid-row {
+        display: block;
+        margin-bottom: 0;
+    }
+    
+    .wpb-product-grid-cell {
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .wpb-product-list-table .wpb-product-image-cell,
+    .wpb-product-list-table .wpb-product-button-cell {
+        width: auto !important;
+        display: block;
+        text-align: center !important;
+    }
+    
+    .wpb-product-list-table .wpb-product-row {
+        display: block;
+        padding: 15px 0;
+    }
+    
+    .wpb-product-list-table .wpb-product-row td {
+        display: block;
+        width: 100% !important;
+        padding: 5px 15px !important;
+        text-align: center !important;
+    }
+}

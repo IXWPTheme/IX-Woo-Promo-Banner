@@ -1,0 +1,78 @@
+/* Base table styles */
+.wpb-product-grid-table,
+.wpb-product-list-table,
+.wpb-product-inner-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Grid view specific */
+.wpb-product-grid-cell {
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #e5e5e5;
+}
+
+/* List view specific */
+.wpb-product-list-table .wpb-product-row {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wpb-product-list-table .wpb-product-row:last-child {
+    border-bottom: none;
+}
+
+.wpb-product-image-cell,
+.wpb-product-button-cell {
+    padding: 15px;
+}
+
+/* Product inner elements */
+.wpb-product-title {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.wpb-product-price {
+    font-size: 15px;
+    color: #3a3a3a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.wpb-product-price del {
+    color: #999;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.wpb-product-price ins {
+    text-decoration: none;
+    color: #77a464;
+}
+
+.wpb-product-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #96588a;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .wpb-product-grid-table,
+    .wpb-product-grid-cell {
+        display: block;
+        width: 100% !important;
+    }
+    
+    .wpb-product-grid-row {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
