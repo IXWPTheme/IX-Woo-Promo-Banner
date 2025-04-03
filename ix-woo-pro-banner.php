@@ -19,7 +19,7 @@ defined('ABSPATH') || exit;
 
 // Define plugin constants
 if (!defined('IX_WPB_VERSION')) {
-    define('IX_WPB_VERSION', '1.2.8.62');
+    define('IX_WPB_VERSION', '1.0.0');
 }
 
 if (!defined('IX_WPB_PLUGIN_DIR')) {
